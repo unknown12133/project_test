@@ -19,7 +19,7 @@
     $noofrows=mysqli_num_rows($result);
 
     if($noofrows==1){
-        header("Location:upi://pay?pa=saibattu9618@axl&pn=sai%20kumar&mc=0000&mode=02&purpose=00&am=$b");
+        header("Location:upi://pay?pa=saibattu9618@axl&pn=sai%20kumar&mc=0000&mode=02&purpose=00&am=$c");
         //  echo 'a';
     }
     else{
