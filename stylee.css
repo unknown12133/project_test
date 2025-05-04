@@ -79,3 +79,25 @@ h2{
     margin-left: 15px;
  }
 
+.n>a,.nn>a{
+    /* padding:10px 5px; */
+    color: black;
+    text-decoration: none;
+    
+}
+.n{
+    background-color: rgb(42, 219, 42);
+    border: none;
+    box-shadow: 2px 2px 5px black;
+    padding: 3px 5px;
+    border-radius: 3px;
+
+}
+.nn{
+    background-color: rgb(255, 0, 0);
+    border: none;
+    box-shadow: 2px 2px 5px black;
+    padding: 3px 5px;
+    border-radius: 3px;
+
+}

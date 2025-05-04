@@ -12,6 +12,7 @@
        $c=$_GET['c'];
        if($b==''){
         header("location:login.php");
+        session_destroy();
        }
 
        $sumb = "SELECT * FROM aaa WHERE UID='$a'";
@@ -21,8 +22,8 @@
         foreach ($result as $record){
          $aa=htmlspecialchars($record['UID']);
          $ab=htmlspecialchars($record['NAME']);
-         $ac=htmlspecialchars($record['FATHER NAME']);
-         $ad=htmlspecialchars($record['MOBILE NO']);
+         $ac=htmlspecialchars($record['FATHER_NAME']);
+         $ad=htmlspecialchars($record['MOBILE_NO']);
          $ae=htmlspecialchars($record['AMOUNT']);
          $af=htmlspecialchars($record['PASSWORD']);
         }
@@ -31,10 +32,14 @@
            $ff='qwer';
                 if($af==$c or $ff==$c){ }
                 else{ header("location:login.php");
-                    $_SESSION['a']='wrong password';}
+                    $_SESSION['a']='wrong password';
+                    //session_destroy();
+                    }
         }
          else{ header("location:login.php");
-            $_SESSION['a']='invalid uid';}
+            $_SESSION['a']='invalid uid';
+            //session_destroy();
+            }
       
 
     $sql="SELECT QUANTITY,AMOUNT,DATE,TIME FROM aa WHERE UID='$a'";

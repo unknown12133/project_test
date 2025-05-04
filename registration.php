@@ -1,6 +1,6 @@
 <?php
     session_start();
-    // include('connection.php');
+     include('connection.php');
     // $con=new mysqli('localhost','root','','db');
     $con=new mysqli('sql12.freesqldatabase.com','sql12776528','vYGngFVM6r','sql12776528');
     $a='';
@@ -24,7 +24,7 @@
     $noofrows=mysqli_num_rows($result);
     //echo $noofrows;
         if($noofrows==0){
-        $sql="INSERT INTO aaa (`UID`, `MOBILE NO`, `NAME`, `FATHER NAME`, `AMOUNT`, `PASSWORD`,`DATE`,`TIME`)VALUES('$a', '$b', '$c', '$d', '$e', '$f',CURRENT_DATE(),CURRENT_TIME())";
+        $sql="INSERT INTO aaa (`UID`, `MOBILE_NO`, `NAME`, `FATHER_NAME`, `AMOUNT`, `PASSWORD`,`DATE`,`TIME`)VALUES('$a', '$b', '$c', '$d', '$e', '$f',CURRENT_DATE(),CURRENT_TIME())";
         $result=mysqli_query($con,$sql);
         $ok='registration success';
     }
