@@ -1,6 +1,6 @@
 <?php
     session_start();
-     include('connection.php');
+    // include('connection.php');
     // $con=new mysqli('localhost','root','','db');
     $con=new mysqli('sql12.freesqldatabase.com','sql12776528','vYGngFVM6r','sql12776528');
     $a='';
