@@ -1,5 +1,5 @@
 <?php
-$con=new mysqli('sql12.freesqldatabase.com','sql12776528','vYGngFVM6r','sql12776528');
+$con=new mysqli('sql12.freesqldatabase.com','sql12779760','gwSQrf9X9P','sql12779760');
  header('Content-Type: application/json');
  //$con=new mysqli('localhost','root','','db');
 
