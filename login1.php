@@ -2,7 +2,7 @@
 
     session_start();
     // include('connection.php');
-    $con=new mysqli('sql12.freesqldatabase.com','sql12776528','vYGngFVM6r','sql12776528');
+    $con=new mysqli('sql12.freesqldatabase.com','sql12779760','gwSQrf9X9P','sql12779760');
         if ($con->connect_error) {
         die("Connection failed: " . $con->connect_error);} 
             $_SESSION['a']='';
