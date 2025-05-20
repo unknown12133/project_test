@@ -78,8 +78,8 @@ else{
                     <td class="t"> <?php echo htmlspecialchars($recor['MOBILE_NO']); ?></td>
                     <td class="t"> <?php echo htmlspecialchars($recor['AMOUNT']); ?></td>
                     <td class="t"> <?php echo htmlspecialchars($recor['DATE']); ?></td>
-                    <td class="t"><button class="n"><a href="<?php if($c==1){'regi.php?a='; echo htmlspecialchars($recor['SNO']);} ?>">UPDATE</a></button>
-                     <button class="nn"><a href="<?php if($c==11){'delete.php?a='; echo htmlspecialchars($recor['SNO']);} ?>"> DELETE</a></button></td>
+                    <td class="t"><button class="n"><a href="<?php if($c==1){ echo'regi.php?a='; echo htmlspecialchars($recor['SNO']);} ?>">UPDATE</a></button>
+                     <button class="nn"><a href="<?php if($c==11){ echo'delete.php?a='; echo htmlspecialchars($recor['SNO']);} ?>"> DELETE</a></button></td>
                    
                 </tr>
                <?php } ?>
