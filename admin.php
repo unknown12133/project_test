@@ -8,6 +8,7 @@ if ($con->connect_error) {
 else{
      $a='';
      $b='';
+     $c='';
      $fail='';
      if(isset($_GET['a'])){
          $a=$_GET['a'];}
@@ -15,6 +16,9 @@ else{
      $b=$_GET['b'];
     $fail='invalid credentials';
     }
+ if(isset($_GET['submit'])){
+     $c=$_GET['submit'];}
+ 
     $sql="SELECT * FROM aaa";
     $resul = $con-> query($sql);
 }
@@ -74,7 +78,8 @@ else{
                     <td class="t"> <?php echo htmlspecialchars($recor['MOBILE_NO']); ?></td>
                     <td class="t"> <?php echo htmlspecialchars($recor['AMOUNT']); ?></td>
                     <td class="t"> <?php echo htmlspecialchars($recor['DATE']); ?></td>
-                    <td class="t"><button class="n"><a href="regi.php?a=<?php echo htmlspecialchars($recor['SNO']); ?>">UPDATE</a></button> <button class="nn"><a href="delete.php?a=<?php echo htmlspecialchars($recor['SNO']); ?>"> DELETE</a></button></td>
+                    <td class="t"><button class="n"><a href="<?php if($c==1){'regi.php?a='; echo htmlspecialchars($recor['SNO']);} ?>">UPDATE</a></button>
+                     <button class="nn"><a href="<?php if($c==11){'delete.php?a='; echo htmlspecialchars($recor['SNO']);} ?>"> DELETE</a></button></td>
                    
                 </tr>
                <?php } ?>
