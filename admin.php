@@ -36,7 +36,7 @@ else{
 </head>
 <body>
   <?php
-   if($a!='admin' and $b!='admin@1'){?>
+   if($a!='admin' or $b!='admin@1'){?>
 <div class="form">
     
     <span class="a fail"><?php echo $fail;?></span>
@@ -45,7 +45,7 @@ else{
         <input type="text" class="log in v" required name="a"><br>
 
         <label for="input" class="log la">password</label><br>
-        <input type="text" class="log in v" required name="b" maxlength="10"><br>
+        <input type="password" class="log in v" required name="b" maxlength="10"><br>
         
 
         <button type="submit" class="log btn h" name="submit">SUBMIT</button>
