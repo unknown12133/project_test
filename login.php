@@ -31,7 +31,7 @@
             <input type="text" class="log in v" required name="b" maxlength="10" minlength="10"><br>
 
             <label for="input" class="log la">password</label><br>
-            <input type="text" class="log in v" required name="c"><br>
+            <input type="password" class="log in v" required name="c"><br>
 
             <button type="submit" class="log btn h" name="submit">SUBMIT</button></form>
         </div>
